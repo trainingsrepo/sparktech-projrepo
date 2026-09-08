@@ -18,6 +18,7 @@ public class SampleApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
+
 	#feature102 code changes by Vivek in his productCatalog on Jul2022
 	public class BankingSystem {
     public static void main(String[] args) {
@@ -36,6 +37,20 @@ public class SampleApplicationTests {
         bank.displayAccountInfo("102");
     }
 	#end of feature102 code changes
+
+	#feature101 code modifications by Ethan in the module paymentGateway on Jul2022
+	 public void displayAccountInfo(String accountNumber) {
+        if (accounts.containsKey(accountNumber)) {
+            Account account = accounts.get(accountNumber);
+            System.out.println("Account Number: " + account.getAccountNumber());
+            System.out.println("Customer Name: " + account.getCustomerName());
+            System.out.println("Balance: $" + account.getBalance());
+        } else {
+            System.out.println("Account not found!");
+        }
+    }
+	#end of feature101 code
+
 
 }
 }
