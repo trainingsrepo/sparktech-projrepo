@@ -13,3 +13,19 @@ function validationForm(){
 			   alert ("Name field must not be empty, Please enter the value")
 			   return false
 }
+#another modifiction @3pm
+
+if (email == "") {
+	alert ("Email filed must not be empty")
+	return false
+	
+}
+else
+{
+	var validemail="\s@"
+	if (!validemail.test(email)){
+		alert("Email is not in valid format, please check")
+		return false
+	}
+	
+}
