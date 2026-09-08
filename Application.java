@@ -18,6 +18,24 @@ public class SampleApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
+	#feature102 code changes by Vivek in his productCatalog on Jul2022
+	public class BankingSystem {
+    public static void main(String[] args) {
+        Bank bank = new Bank();
+
+        // Adding a few accounts
+        bank.addAccount("101", "John Doe", 1000.0);
+        bank.addAccount("102", "Jane Smith", 1500.0);
+
+        // Performing transactions
+        bank.performTransaction("101", 500.0);
+        bank.performTransaction("103", 200.0); // This account doesn't exist
+
+        // Displaying account information
+        bank.displayAccountInfo("101");
+        bank.displayAccountInfo("102");
+    }
+	#end of feature102 code changes
 
 }
 }
