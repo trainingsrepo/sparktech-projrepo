@@ -18,6 +18,18 @@ public class SampleApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
+	#feature101 code modifications by Ethan in the module paymentGateway on Jul2022
+	 public void displayAccountInfo(String accountNumber) {
+        if (accounts.containsKey(accountNumber)) {
+            Account account = accounts.get(accountNumber);
+            System.out.println("Account Number: " + account.getAccountNumber());
+            System.out.println("Customer Name: " + account.getCustomerName());
+            System.out.println("Balance: $" + account.getBalance());
+        } else {
+            System.out.println("Account not found!");
+        }
+    }
+	#end of feature101 code
 
 }
 }
