@@ -32,7 +32,10 @@ cons num1=10;
 cons num2=20;
 	cons sum=num1+num2;
 	console.log('The Sum of the numbers are '+ num1+' 'and + num2 +' +sum);
-
+#new added code
+	if(num == random) {
+	console.log("You guessed the right result");
+	}
 	
 	
 }
